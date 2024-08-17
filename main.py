@@ -33,13 +33,13 @@ class GeminiClient:
             }
 
 # Configure Google Generative AI
-genai.configure(api_key="your api key")
+genai.configure(api_key="")
 genai_model = genai.GenerativeModel('gemini-1.5-flash')
 
 chatStr = ""
 
 # Initialize the Gemini client
-gemini_client = GeminiClient(api_key="your api key")
+gemini_client = GeminiClient(api_key="")
 
 # Global flag to indicate TTS status
 tts_active = threading.Event()
